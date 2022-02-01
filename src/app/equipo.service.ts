@@ -5,7 +5,7 @@ import { Jugador } from "./models/Jugador";
 @Injectable({ providedIn: "root" })
 export class EquipoService {
   private url2 = "https://api-liga20-21.herokuapp.com/";
-  private url = "http://localhost:3000"
+  private url = "https://premierleaguev5.herokuapp.com/"
   constructor(private http: HttpClient) {}
   getEquiposApi() {
     const urlget = `${this.url}/equipos`;
